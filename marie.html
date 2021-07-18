@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="marie.css">
+		<title>My Sheros - Marie Curie</title>
+	</head>
+
+	<body>
+		<div class="logo">
+			<a href="index.html"><img src="Logo_Small.png" alt="Home"></a>	
+		</div>
+		<div class="name">
+		<h1>Marie Curie</h1>
+		</div>
+		<div class="year">
+		<h2>1867 – 1934</h2>
+		</div>
+		<div class="pic">
+			<img src="marie.jpg" alt="Robot cartoon" height="500vh">
+		</div>
+		<div class="container">
+			<div class="card card1 card1-top">
+				<dl>
+					<dt class="dt-heading">My Early Life & Achievements</dt>
+					<dd>I was a Polish-born French scientist.</dd>
+					<dd>I deeply believe in the importance of a good education.</dd>
+					<dd>I am most famous for my work on radioactivity. </dd>
+					<dd>I discovered two radioactive elements: Radium and Polonium.</dd>
+					<dd>I am the first woman to have ever won a Nobel Prize.</dd>
+					<dd>I am the only person to date to have won it twice in two different disciplines of science.</dd>
+				</dl>
+				<button onclick="button1()">Next</button>
+			</div>
+
+			<div class="card card2 card2-back">
+				<dl>
+					<dt class="dt-heading">My Contributions</dt>
+					<dd>I coined the term Radioactivity.</dd>
+					<dd>I discovered that the uranium rays were coming from within its nucleus.</dd>
+					<dd>I invented mobile radiology units during World War I.</dd>
+					<dd>My efforts resulted in the use of X-Rays for medical purposes.</dd>
+					<dd>My work on radioactivity is used for possible treatments of cancer.</dd>
+					<dd>I founded the Curie Institute.</dd>
+					<dd>I was the first woman to become a professor at the University of Paris. </dd>
+				</dl>
+				<button onclick="button2()">Next</button>
+			</div>
+
+			<div class="card card3 card3-back">
+				<dl>
+					<dt class="dt-heading">My Challenges</dt>
+					<dd>I was born in poverty.</dd>
+					<dd>In my time, women were not offered opportunities for higher education.</dd>
+					<dd>I attended a secret "Floating University" that changed its local frequently to avoid detection by Russians.</dd>
+					<dd>I had to break the glass ceiling to have my name recommended for Nobel Prize. </dd>
+					<dd>I suffered from leukemia and several health issues due to exposure to radioactivity. </dd>
+				</dl>
+				<button onclick="button3()">Next</button>
+			</div>
+
+			<div class="card card4 card4-back">
+				<dl>
+					<dt class="dt-heading">My Thoughts on Life</dt>
+					<dd>Nothing in life is to be feared, it is only to be understood.</dd>
+					<dd>Be less curious about people and more curious about ideas.</dd>
+					<dd>I was taught that the way of progress was neither swift nor easy.</dd>
+					<dd>First Principle: Never to let one's self be beaten down by person or by events.</dd>
+				</dl>
+				<button onclick="button4()">Next</button>
+			</div>
+
+		</div>
+		<script src="marie.js"></script>
+	
+		<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "7e84d4d4-9946-411b-9759-c0b52bec7e70", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "3f5ec988-d4f3-4e3d-bd3a-700bfdb116f6", // The ID of your service instance.
+      openChatByDefault: true,
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+	</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="rbg.css">
+		<title>My Sheros - Ruth Bader Ginsburg</title>
+	</head>
+
+	<body>
+		<div class="logo">
+			<a href="index.html"><img src="Logo_Small.png" alt="Home"></a>	
+		</div>
+		<div class="name">
+			<h1>Ruth Bader Ginsburg</h1>
+		</div>
+		<div class= "year">
+			<h2>1933 - 2020</h2>
+		</div>
+		<div class="pic">
+			<img src="ruth_bader_ginsburg.jpg" alt="Robot cartoon" height="500vh">
+		</div>
+		<div class="container">
+			<div class="card card1 card1-top">
+				<dl>
+					<dt class="dt-heading">My Early Life & Achievements</dt>
+					<dd>I was from Brooklyn, New York. I served as a Lawyer and Supreme Court Justice </dd>
+					<dd>My mother encouraged my learning by taking me to the library often.</dd>
+					<dd>I earned a bachelor’s degree from Cornell University with high honors and distinction in all subjects. </dd>
+					<dd>I was a member of the Harvard Law Review and the Columbia Review. </dd>
+					<dd>I was the first woman to receive tenure at Columbia University Law School.</dd>
+					<dd>I won the American Bar Association’s Thurgood Marshall Award for my contributions to gender equality and civil rights.</dd>
+				</dl>
+				<button onclick="button1()">Next</button>
+			</div>
+
+			<div class="card card2 card2-back">
+				<dl>
+					<dt class="dt-heading">My Contributions</dt>
+					<dd>I was the second female justice appointed to the US Supreme Court</dd>
+					<dd>I was the first Jewish woman to serve in the US Supreme Court.</dd>
+					<dd>I believed that the law was gender-blind and all groups were entitled to equal rights.</dd>
+					<dd>I served as the director of the Women’s Rights Project of the American Civil Liberties Union (ACLU)
+					<dd>I argued six landmark cases on gender equality before the U.S. Supreme Court. </dd>
+					<dd>I was a leading advocate for the equal citizenship status of men and women.</dd>
+				</dl>
+				<button onclick="button2()">Next</button>
+			</div>
+
+			<div class="card card3 card3-back">
+				<dl>
+					<dt class="dt-heading">My Challenges</dt>
+					<dd>My mother struggled with cancer and died the day before my high school graduation.</dd>
+					<dd>At Harvard, I balanced roles as a new mother, and a student in a hostile male-dominated environment.</dd>
+					<dd>Despite my stellar academic record, I encountered gender discrimination while seeking employment.  </dd>
+					<dd>I contracted colon cancer despite which I did not miss a day of service on the bench.</dd>
+					<dd>Ten years later, I contracted pancreatic cancer, and was back in court within 12 days of my surgery. </dd>
+				</dl>
+				<button onclick="button3()">Next</button>
+			</div>
+
+			<div class="card card4 card4-back">
+				<dl>
+					<dt class="dt-heading">My Thoughts On Life</dt>
+					<dd>My mother told me to be a lady. And for her, that meant be your own person, be independent.</dd>
+					<dd>Fight for the things that you care about, but do it in a way that will lead others to join you.</dd>
+					<dd>Even if you meet Prince Charming, be able to fend for yourself.</dd>
+					<dd>Your right to freedom of speech, your free exercise of religion stops at the other fellow’s nose.</dd>
+					<dd>Women belong in all places where decisions are being made.</dd>
+				</dl>
+				<button onclick="button4()">Next</button>
+			</div>
+
+		</div>
+		<script src="marie.js"></script>
+		<script> window.watsonAssistantChatOptions = 
+		{ 
+			integrationID: "0e03a272-7d77-4fc6-9d72-7d5cb2ff05e0", // The ID of this integration. 
+			region: "us-east", // The region your integration is hosted in. 
+			serviceInstanceID: "a81131b5-3c04-4a55-861a-620b743a0722", // The ID of your service instance. 
+			openChatByDefault: true,
+			onLoad: function(instance) { instance.render(); } }; 
+			setTimeout(function()
+			{ 
+				const t=document.createElement('script'); t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js"; document.head.appendChild(t)
+			}); </script>
+	</body>
+
+</html>

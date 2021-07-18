@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="Maya_ang.css">
+		<title>My Sheros - Maya Angelou</title>
+	</head>
+
+	<body>
+		<div class="logo">
+			<a href="index.html"><img src="Logo_Small.png" alt="Home"></a>	
+		</div>
+		<div class="name">
+		<h1>Maya Angelou</h1>
+		</div>
+		<div class="year">
+		<h2>1928 - 2014</h2>
+		</div>
+		<div class="pic">
+			<img src="MayaAngelou.png" alt="Maya Angelou" height="500vh">
+		</div>
+		<div class="container">
+			<div class="card card1 card1-top">
+				<dl>
+					<dt class="dt-heading">My Early Life & Achievements</dt>
+					<dd>I was an American poet, memoirist, and civil rights activist.</dd>
+					<dd>My parents split up when I was a child. </dd>
+					<dd>I was raised by my grandmother.</dd>
+					<dd>I have published 36 books including autobiographies, books of essays, and poetry. </dd>
+					<dd>I have received more than 50 honorary degrees.</dd>
+					<dd>My first autobiography, I Know Why the Caged Bird Sings, received international acclaim.</dd>
+				</dl>
+				<button onclick="button1()">Next</button>
+			</div>
+
+			<div class="card card2 card2-back">
+				<dl>
+					<dt class="dt-heading">My Contributions</dt>
+					<dd>I was active in the Civil Rights Movement.</dd>
+					<dd>I worked with Martin Luther King Jr. and Malcolm X.</dd>
+					<dd>I was named the first Reynolds Professor of American Studies at Wake Forest University.</dd>
+					<dd>I was awarded the Presidential Medal of Freedom</dd>
+					<dd>I recited my poem "On the Pulse of Morning" at the first presidential inauguration of Bill Clinton.</dd>
+				</dl>
+				<button onclick="button2()">Next</button>
+			</div>
+
+			<div class="card card3 card3-back">
+				<dl>
+					<dt class="dt-heading">My Challenges</dt>
+					<dd>As a child, I  experienced racial prejudices and discrimination in Arkansas.</dd>
+					<dd>I was extremely insecure as a child, viewing myself as awkward, unwanted, and ugly because I was Black.</dd>
+					<dd>I suffered sexual abuse at the hands of a family associate around the age of 7.</dd>
+					<dd>When I was 8 years old, I stopped speaking. I silenced my voice because I thought my voice had killed a man. </dd>
+					<dd>As a single teen mother at 16, I supported myself and my son by working as a waitress and cook.</dd>
+					<dd>I was one of the most banned authors in US.</dd>
+				</dl>
+				<button onclick="button3()">Next</button>
+			</div>
+
+			<div class="card card4 card4-back">
+				<dl>
+					<dt class="dt-heading">My Thoughts on Life</dt>
+					<dd>If you're always trying to be normal, you will never know how amazing you can be.</dd>
+					<dd>People will forget what you said, people will forget what you did, but people will never forget how you made them feel.</dd>
+					<dd>You alone are enough, you have nothing to prove to anybody.</dd>
+					<dd>Nothing will work unless you do.</dd>
+					<dd>Live as though life was created for you.</dd>
+					<dd>Be a rainbow in someone else's cloud.</dd>
+				</dl>
+				<button onclick="button4()">Next</button>
+			</div>
+
+		</div>
+		<script src="marie.js"></script>
+		
+		<script>
+		  window.watsonAssistantChatOptions = {
+		      integrationID: "cfa110d1-782d-4613-8e05-f1f18d2c109b", // The ID of this integration.
+		      region: "us-east", // The region your integration is hosted in.
+		      serviceInstanceID: "a81131b5-3c04-4a55-861a-620b743a0722", // The ID of your service instance.
+		      openChatByDefault: true,
+		      onLoad: function(instance) { instance.render(); }
+		    };
+		  setTimeout(function(){
+		    const t=document.createElement('script');
+		    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+		    document.head.appendChild(t);
+		  });
+		</script>
+
+	</body>
+
+</html>

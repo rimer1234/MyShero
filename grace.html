@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="grace.css">
+		<title>My Sheros - Grace Hopper</title>
+	</head>
+
+	<body>
+		<div class="logo">
+			<a href="index.html"><img src="Logo_Small.png" alt="Home"></a>	
+		</div>
+		<div class="name">
+			<h1>Grace Hopper</h1>
+		</div>
+		<div class="year">
+			<h2>1906 - 1992</h2>
+		</div>
+		<div class="pic">
+			<img src="grace.jpg" alt="Robot cartoon" height="500vh">
+		</div>
+		<div class="container">
+			<div class="card card1 card1-top">
+				<dl>
+					<dt class="dt-heading">My Early Life & Achievements</dt>
+					<dd>I was an American computer scientist and US Navy rear admiral.</dd>
+					<dd>I was the first woman to earn a Ph.D. in mathematics from Yale University.</dd>
+					<dd>I created the first compiler named A-O for computer languages. </dd>
+					<dd>My compiler was the precursor for the COBOL language.</dd>
+					<dd>I became the first female recipient of the National Medal of Technology.</dd>
+					<dd>Due to my influence, programmers use “if/thens” instead of 1s and 0s today.</dd>
+				</dl>
+				<button onclick="button1()">Next</button>
+			</div>
+
+			<div class="card card2 card2-back">
+				<dl>
+					<dt class="dt-heading">My Achievements</dt>
+					<dd>The naval ship USS Hopper was named in my honor.</dd>
+					<dd>I am called Grandmother of Cobol, Amazing Grace.</dd>
+					<dd>I inspired young people to learn to program.</dd>
+					<dd>I was honored with the Presidential Medal of Freedom.</dd>
+					<dd>At 79, I was the oldest serving officer in U.S Navy.</dd>
+					<dd>The Association for Computing Machinery offers a Grace Murray Hopper Award. </dd>
+				</dl>
+				<button onclick="button2()">Next</button>
+			</div>
+
+			<div class="card card3 card3-back">
+				<dl>
+					<dt class="dt-heading">My Challenges</dt>
+					<dd>In my work on the compiler, I had to ingeniously design "forward jumps" in a program that had yet to be written.</dd>
+					<dd>After years of relentless effort, I spiraled into depression, alcoholism, and suicidal behavior.</dd>
+					<dd>I was rejected by the U.S. Navy for reasons that I couldn’t change.</dd>
+					<dd>I was deemed too short, too underweight, too old (37 years), and overqualified.</dd>
+				</dl>
+				<button onclick="button3()">Next</button>
+			</div>
+
+			<div class="card card4 card4-back">
+				<dl>
+					<dt class="dt-heading">My Thoughts On Life</dt>
+					<dd>A ship in port is safe, but that's not what ships are built for.</dd>
+					<dd>It is often easier to ask for forgiveness than to ask for permission.</dd>
+					<dd>You don't manage people; you manage things. You lead people.</dd>
+					<dd>Humans are allergic to change. They love to say, "We've always done it this way." I try to fight that. That's why I have a clock on my wall that runs counter-clockwise.</dd>
+					<dd>To me programming is more than an important practical art. It is also a gigantic undertaking in the foundations of knowledge.</dd>
+				</dl>
+				<button onclick="button4()">Next</button>
+			</div>
+
+		</div>
+		<script src="marie.js"></script>
+		
+		   <script> window.watsonAssistantChatOptions = { 
+		   		integrationID: "48b93085-32e3-4872-b55b-16781498085e", // The ID of this integration. 
+				region: "us-south", // The region your integration is hosted in. 
+				serviceInstanceID: "3f5ec988-d4f3-4e3d-bd3a-700bfdb116f6", // The ID of your service instance.
+				openChatByDefault: true,
+				onLoad: function(instance) { instance.render(); } }; 
+				setTimeout(function(){ 
+				const t=document.createElement('script'); 
+				t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js"; 
+				document.head.appendChild(t); }); 
+			</script>
+	</body>
+
+</html>

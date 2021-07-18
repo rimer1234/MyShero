@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Felipa&display=swap');
+
+html, body { 
+	  height: 100%;
+	  background-color: #deebd3;
+}
+
+.logo {
+	display: flex;
+	justify-content:flex-start;
+	position:absolute;
+}
+
+
+.name {
+	display: flex;
+	justify-content: center;
+	font-family: 'Bungee Shade', cursive;
+	font-size:30px;
+}
+
+.row1 {
+  display: flex; 
+  background-color: #deebd3;
+  margin-left: 20%;
+  margin-right: 15%;
+  margin-top: 5%;
+}
+
+.row2 {
+  display: flex; 
+background-color: #deebd3;
+ margin-left:20%;
+  margin-right: 15%;
+  margin-top: 5%;
+ }

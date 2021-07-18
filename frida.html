@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="frida.css">
+		<title>My Sheros - Frida Kahlo</title>
+	</head>
+
+	<body>
+		<div class="logo">
+			<a href="index.html"><img src="Logo_Small.png" alt="Home"></a>	
+		</div>
+		<div class="name">
+			<h1>Frida Kahlo</h1>
+		</div>
+		<div class="year">
+			<h2>1907 - 1954</h2>
+		</div>
+		<div class="pic">
+			<img src="freidak.jpg" alt="Robot cartoon" height="500vh">
+		</div>
+		<div class="container">
+			<div class="card card1 card1-top">
+				<dl>
+					<dt class="dt-heading">My Early Life & Achievements</dt>
+					<dd>I am a Mexican surrealist painter of the post-revolutionary Mexicayotl movement.</dd>
+					<dd>I am one of Mexico's most well-known and enigmatic cultural heroes.</dd>
+					<dd>I am renowned for painting about my experiences of chronic pain.</dd>
+					<dd>I was disabled by polio when I was a child.</dd>
+					<dd>I am also regarded as an icon for Chicanos, the feminism movement and the LGBTQ+ movement.</dd>
+					<dd>I am celebrated internationally for my uncompromising depiction of the female experience and form.</dd>
+				</dl>
+				<button onclick="button1()">Next</button>
+			</div>
+
+			<div class="card card2 card2-back">
+				<dl>
+					<dt class="dt-heading">My Achievements</dt>
+					<dd>My home, La Casa Azul, is a popular museum with approximately 25,000 visitors monthly.</dd>
+					<dd>A park, Parque Frida Kahlo, featuring a bronze statue of myself, is dedicated to my name.</dd>
+					<dd>I am the first Hispanic woman to be honored with a U.S. postage stamp.</dd>
+					<dd>I was inducted into the Legacy Walk that celebrates LGBT history and people.</dd>
+					<dd>I was one of the inaugural honorees in the Rainbow Honor Walk, noting LGBTQ people who have made significant contributions in their fields.</dd>
+				</dl>
+				<button onclick="button2()">Next</button>
+			</div>
+
+			<div class="card card3 card3-back">
+				<dl>
+					<dt class="dt-heading">My Challenges</dt>
+					<dd>I was disabled by polio when I was 6 years old.</dd>
+					<dd>In spite of a full recovery, the illness left my right leg thinner than my left. I wore long and beautiful dresses to conceal it.</dd>
+					<dd>I endured a bus accident that caused me lifelong pain and medical issues.</dd>
+					<dd>My marriage was plagued with infidelity and I suffered from anxiety, depression, alcoholism, and identity issues throughout my life.</dd>
+					<dd>All three of my pregnancies had to be terminated which caused me a lot of grief and heartache leading to depression.</dd>
+				</dl>
+				<button onclick="button3()">Next</button>
+			</div>
+
+			<div class="card card4 card4-back">
+				<dl>
+					<dt class="dt-heading">My Thoughts On Life</dt>
+					<dd>Feet, what do I need you for when I have wings to fly?</dd>
+					<dd>I paint self-portraits because I am so often alone, because I am the person I know best.</dd>
+					<dd>At the end of the day, we can endure much more than we think we can.</dd>
+					<dd>Nothing is worth more than laughter. It is strength to laugh and to abandon oneself, to be light.</dd>
+					<dd>I think that little by little I’ll be able to solve my problems and survive.</dd>
+				</dl>
+				<button onclick="button4()">Next</button>
+			</div>
+
+		</div>
+		<script src="marie.js"></script>
+		<script>
+		  window.watsonAssistantChatOptions = {
+		      integrationID: "8de3d42d-db80-4eae-bed0-992a173bf6de", // The ID of this integration.
+		      region: "us-east", // The region your integration is hosted in.
+		      serviceInstanceID: "a81131b5-3c04-4a55-861a-620b743a0722", // The ID of your service instance.
+		      openChatByDefault: true,
+		      onLoad: function(instance) { instance.render(); }
+		    };
+		  setTimeout(function(){
+		    const t=document.createElement('script');
+		    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+		    document.head.appendChild(t);
+		  });
+		</script>
+	</body>
+
+</html>

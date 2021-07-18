@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="claudette.css">
+		<title>My Sheros - Claudette Colvin</title>
+	</head>
+
+	<body>
+		<div class="logo">
+			<a href="index.html"><img src="Logo_Small.png" alt="Home"></a>	
+		</div>
+		<div class="name">
+			<h1>Claudette Colvin</h1>
+		</div>
+		<div class="year">
+			<h2>1939 - Present</h2>
+		</div>
+		<div class="pic">
+			<img src="Claudette_Colvin.jpg" alt="Claudette Colvin" height="500vh">
+		</div>
+		<div class="container">
+			<div class="card card1 card1-top">
+				<dl>
+					<dt class="dt-heading">My Early Life & Achievements</dt>
+					<dd>I am an activist, a pioneer in the civil rights movement, and a nurse aide.</dd>
+					<dd>I was the first African American woman to refuse to move to the back of a bus, nine months before Rosa Parks did.</dd>
+					<dd>When I was 15, I refused to move to the back of the bus and give up my seat to a white person.</dd>
+					<dd>I was forcibly removed from the bus and arrested by two policemen and imprisoned. </dd>
+					<dd>My case was dropped by civil rights campaigners because: I was pregnant with a child out of wedlock, I did not have 'good hair', and was not fair skinned.</dd>
+				</dl>
+				<button onclick="button1()">Next</button>
+			</div>
+
+			<div class="card card2 card2-back">
+				<dl>
+					<dt class="dt-heading">My Achievements</dt>
+					<dd>When I was young, we couldn't try on clothes in stores. You had to take a brown paper bag and draw a diagram of your foot and take it to the store.</dd>
+					<dd>I was charged with disturbing the peace, violating segregation laws, and battering and assaulting a police officer.</dd>
+					<dd>I am one of four women plaintiffs in Browder v. Gayle, the court case that successfully overturned bus segregation laws in Montgomery and Alabama.</dd>
+					<dd>March 2 is named Claudette Colvin Day in Montgomery. </dd>
+				</dl>
+				<button onclick="button2()">Next</button>
+			</div>
+
+			<div class="card card3 card3-back">
+				<dl>
+					<dt class="dt-heading">My Challenges</dt>
+					<dd>I had difficulty finding and keeping work after my participation in the federal court case that overturned bus segregation.</dd>
+					<dd>I was branded a troublemaker by many in my community.</dd>
+					<dd>Furthermore, I withdrew from college and struggled in the local environment.</dd>
+					<dd>Though I was a predecessor to the Montgomery bus boycott movement, my story was rarely told.</dd>
+					<dd>NAACP believed that Rosa Parks would be a better figure since she was an adult, had a job,  had a middle-class appearance and felt she had the maturity to handle being at the center of a controversy.</dd>
+				</dl>
+				<button onclick="button3()">Next</button>
+			</div>
+
+			<div class="card card4 card4-back">
+				<dl>
+					<dt class="dt-heading">My Thoughts On Life</dt>
+					<dd>I knew then and I know now that, when it comes to justice, there is no easy way to get it. </dd>
+					<dd>You can't sugarcoat it. You have to take a stand and say "This is not right."</dd>
+					<dd>I felt like Sojourner Truth was pushing down on one shoulder and Harriet Tubman was pushing down on the other—saying, 'Sit down girl!'</dd>
+					<dd>I just couldn't move. History had me glued to the seat.</dd>
+					<dd>This is my constitutional right!</dd>
+				</dl>
+				<button onclick="button4()">Next</button>
+			</div>
+
+		</div>
+		<script src="marie.js"></script>
+		
+		<script>
+		  window.watsonAssistantChatOptions = {
+		      integrationID: "33ede39e-bf01-4e1f-9a7d-0aa6db7a00f7", // The ID of this integration.
+		      region: "us-south", // The region your integration is hosted in.
+		      serviceInstanceID: "3f5ec988-d4f3-4e3d-bd3a-700bfdb116f6", // The ID of your service instance.
+		      openChatByDefault: true,
+		      onLoad: function(instance) { instance.render(); }
+		    };
+		  setTimeout(function(){
+		    const t=document.createElement('script');
+		    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+		    document.head.appendChild(t);
+		  });
+		</script>
+	</body>
+
+</html>
